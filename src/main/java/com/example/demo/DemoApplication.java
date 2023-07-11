@@ -12,9 +12,17 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	@GetMapping("/index")
-	public String index(){
+	@GetMapping("/Registro")
+	public String registro(){
+		return "registro2";
+	};
+	@GetMapping("/IniciarSesion")
+	public String iniciarSesion(){
 		return "index";
+	};
+	@GetMapping("/home")
+	public String home(){
+		return "Perfil";
 	};
 
 }
