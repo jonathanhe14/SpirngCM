@@ -16,17 +16,6 @@ public class DemoApplication {
 	public String index(){
 		return "index";
 	};
-	@GetMapping("/Registro")
-	public String registro(){
-		return "registro2";
-	};
-	@GetMapping("/usuariosLista")
-	public String lista(){
-		return "listaUsuarios";
-	};
-	@GetMapping("/home")
-	public String home(){
-		return "Perfil";
-	};
+
 
 }
