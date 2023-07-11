@@ -12,13 +12,17 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
+	@GetMapping("/index")
+	public String index(){
+		return "index";
+	};
 	@GetMapping("/Registro")
 	public String registro(){
 		return "registro2";
 	};
-	@GetMapping("/IniciarSesion")
-	public String iniciarSesion(){
-		return "index";
+	@GetMapping("/usuariosLista")
+	public String lista(){
+		return "listaUsuarios";
 	};
 	@GetMapping("/home")
 	public String home(){
