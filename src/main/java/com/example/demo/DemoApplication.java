@@ -13,8 +13,8 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	@GetMapping("/index")
-	public String registro(){
-		return "Hola Mundo";
+	public String index(){
+		return "index";
 	};
 
 }
